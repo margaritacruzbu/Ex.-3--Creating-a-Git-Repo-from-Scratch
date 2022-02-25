@@ -1,0 +1,21 @@
+{
+  "name": "ex.-3--creating-a-git-repo-from-scratch",
+  "version": "1.0.0",
+  "description": "A simple quote display node application for DIG4639 Mobile Development at UCF",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margaritacruzbu/Ex.-3--Creating-a-Git-Repo-from-Scratch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/margaritacruzbu/Ex.-3--Creating-a-Git-Repo-from-Scratch/issues"
+  },
+  "homepage": "https://github.com/margaritacruzbu/Ex.-3--Creating-a-Git-Repo-from-Scratch#readme"
+}
