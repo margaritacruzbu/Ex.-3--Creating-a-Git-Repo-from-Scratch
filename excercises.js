@@ -6,7 +6,7 @@ function aFunction() {
 let functionReference = aFunction
 
 function callFunction(functionParameter,times) {
-    for (let i - 0; i < times; i++) {
+    for (let i , 0; i < times) i++; {
     return functionParameter()
     }
 }
@@ -72,15 +72,18 @@ loop(0, n => n > 3, n => n + 1, console.log);
 
 //3-3. everyLoop(array, test)
 //3-4. everySome(array, test)
-function everyLoop(array, test) 
-{
-  // Your code here.
-}
 
-function everySome(array, test) 
+export function everyLoop(array, test) { 
+
+}
 {
-// Your code here.
-} 
+    // Your code here.
+    let returnValue = true
+    for (let item of array) {
+        returnValue = returnValue && test(item)
+    }
+    return returnValue
+  }
 
 console.log(everyLoop([1, 3, 5], n => n < 10));
 // → true
@@ -88,3 +91,23 @@ console.log(everyLoop([2, 4, 16], n => n < 10));
 // → false
 console.log(everyLoop([], n => n < 10));
 // → true
+
+ export function everySome(array, test) 
+{
+// Your code here.
+    return !array.some(item => {
+        console.log("Applying the test to " + item + " with result " + test (item))
+       if (!test(item)) {
+           console.log ("I found an item that doesn't meet the test!" )
+       }
+        return !test(item)
+    })
+}
+    
+console.log(everySome([1, 3, 5], n => n < 10));
+// → true
+console.log(everySome([2, 4, 16], n => n < 10));
+// → false
+console.log(everySome([], n => n < 10));
+// → true
+
